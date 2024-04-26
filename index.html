@@ -1,108 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-  <title>Frontend Mentor | News homepage</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <img src="./assets/images/logo.svg" alt="Logo" />
-    <nav>
-      <ul class="desktop__nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
-      </ul>
-     
-     <ul class="mobile__nav">
-       <li><a href="#">Home</a></li>
-       <li><a href="#">New</a></li>
-       <li><a href="#">Popular</a></li>
-       <li><a href="#">Trending</a></li>
-       <li><a href="#">Categories</a></li>
-     </ul>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/images/logo.svg" alt="Logo" />
+      <nav>
+        <ul class="desktop__nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
 
-     <!--Mobile Icon  -->
+        <ul class="mobile__nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+
+      <!--Mobile Icon  -->
       <div class="mobile__nav__icon">
-        <img src="./assets/images/icon-menu.svg" alt="Menu Icon Mobile">
+        <img src="./assets/images/icon-menu.svg" alt="Menu Icon Mobile" />
       </div>
-      
-  </header>
+    </header>
 
-  <main>
-    <!-- Main Article -->
-    <section id="main__article__section">
-      <img class="main__article__img" src="./assets/images/image-web-3-mobile.jpg" alt="Image Lego Web3" />
-      <h1 class="main__article__title">The Bright Future of Web 3.0?</h1>
-      <article class="main__article">
-        We dive into the next evolution of the web that claims to put
-        the power of the platforms back into the hands of the people.
-        But is it really fulfilling its promise?
+    <main>
+      <!-- Main Article -->
+      <div class="main__wrapper">
+        <section id="main__article__section">
+          <img
+            class="main__article__img"
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="Image Lego Web3"
+          />
 
-        <button>Read more</button>
-      </article>
-    </section>
+          <img
+            class="main__article__img__desktop"
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt=""
+          />
 
-    <!-- ASIDE -->
-    <aside>
-      <section>
-        <h2>New</h2>
-        <article>
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <div class="text__wrapper">
+            <div class="title__wrapper">
+              <h1 class="main__article__title">
+                The Bright Future of Web 3.0?
+              </h1>
+            </div>
+
+            <article class="main__article">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button>Read more</button>
+            </article>
+          </div>
+        </section>
+
+        <!-- ASIDE -->
+        <aside id="sidebar">
+          <section>
+            <h2>New</h2>
+            <article>
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </article>
+            <article>
+              <h3>The Downsides of AI Artistry</h3>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </article>
+            <article>
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </section>
+        </aside>
+      </div>
+
+      <!-- ARTICLEs -->
+      <section id="articles">
+        <article class="article">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" />
+          <div class="article__text">
+            <h3>01</h3>
+            <h4>Reviving Retro PCs</h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
         </article>
-        <article>
-          <h3>The Downsides of AI Artistry</h3>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        <article class="article">
+          <img src="./assets/images/image-top-laptops.jpg" alt="Laptop" />
+          <div class="article__text">
+            <h3>02</h3>
+            <h4>Top 10 Laptops of 2022</h4>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
         </article>
-        <article>
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        <article class="article">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="Gaming growth"
+          />
+          <div class="article__text">
+            <h3>03</h3>
+            <h4>The Growth of Gaming</h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
         </article>
       </section>
-    </aside>
+    </main>
 
-    <!-- ARTICLEs -->
-    <section id="articles">
-      <article class="article">
-        <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" />
-        <div class="article__text">
-          <h3>01</h3>
-          <h4>Reviving Retro PCs</h4>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
-      </article>
-      <article class="article">
-        <img src="./assets/images/image-top-laptops.jpg" alt="Laptop" />
-        <div class="article__text">
-          <h3>02</h3>
-          <h4>Top 10 Laptops of 2022</h4>
-          <p>Our best picks for various needs and budgets.</p>
-        </div>
-      </article>
-      <article class="article">
-        <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming growth" />
-        <div class="article__text">
-          <h3>03</h3>
-          <h4>The Growth of Gaming</h4>
-          <p>How the pandemic has sparked fresh opportunities.</p>
-        </div>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Pamela</a>.
-    </div>
-  </footer>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Pamela</a>.
+      </div>
+    </footer>
+  </body>
 </html>
