@@ -251,9 +251,6 @@ p {
     gap: 2rem;
   }
 
-  #header nav ul li {
-  }
-
   #menu__button button {
     display: none;
   }
