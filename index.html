@@ -13,18 +13,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="./assets/images/logo.svg" alt="Logo" />
-      <nav>
-        <ul class="desktop__nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
+    <header id="header">
+      <div>
+        <img src="./assets/images/logo.svg" alt="Logo" />
+      </div>
 
-        <ul class="mobile__nav">
+      <nav>
+        <button id="button__close">
+          <img src="./assets/images/icon-menu-close.svg" alt="" />
+        </button>
+        <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Popular</a></li>
@@ -33,54 +31,48 @@
         </ul>
       </nav>
 
-      <!--Mobile Icon  -->
-      <div class="mobile__nav__icon">
-        <img src="./assets/images/icon-menu.svg" alt="Menu Icon Mobile" />
+      <div class="menu__button">
+        <button id="button__open">
+          <img src="./assets/images/icon-menu.svg" alt="Icon Menu" />
+        </button>
       </div>
     </header>
 
     <main>
       <!-- Main Article -->
-      <div class="main__wrapper">
-        <section id="main__article__section">
-          <img
-            class="main__article__img"
-            src="./assets/images/image-web-3-mobile.jpg"
-            alt="Image Lego Web3"
-          />
-
-          <img
-            class="main__article__img__desktop"
-            src="./assets/images/image-web-3-desktop.jpg"
-            alt=""
-          />
-
-          <div class="text__wrapper">
-            <div class="title__wrapper">
-              <h1 class="main__article__title">
-                The Bright Future of Web 3.0?
-              </h1>
-            </div>
-
-            <article class="main__article">
+      <section id="main__article">
+        <div>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/images/image-web-3-desktop.jpg"
+            />
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
+          </picture>
+          <article>
+            <h1>The Bright Future of Web 3.0?</h1>
+            
+            <div>
               <p>
                 We dive into the next evolution of the web that claims to put
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
               <button>Read more</button>
-            </article>
-          </div>
-        </section>
+            </div>
+          </article>
+        </div>
 
         <!-- ASIDE -->
-        <aside id="sidebar">
-          <section>
+        <div>
+          <aside>
             <h2>New</h2>
+
             <article>
               <h3>Hydrogen VS Electric Cars</h3>
               <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
             </article>
+
             <article>
               <h3>The Downsides of AI Artistry</h3>
               <p>
@@ -88,6 +80,7 @@
                 generation?
               </p>
             </article>
+
             <article>
               <h3>Is VC Funding Drying Up?</h3>
               <p>
@@ -95,35 +88,40 @@
                 what that means.
               </p>
             </article>
-          </section>
-        </aside>
-      </div>
+          </aside>
+        </div>
+      </section>
 
       <!-- ARTICLEs -->
       <section id="articles">
-        <article class="article">
+        <article>
           <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" />
-          <div class="article__text">
-            <h3>01</h3>
+
+          <div>
+            <span>01</span>
             <h4>Reviving Retro PCs</h4>
             <p>What happens when old PCs are given modern upgrades?</p>
           </div>
         </article>
-        <article class="article">
+
+        <article>
           <img src="./assets/images/image-top-laptops.jpg" alt="Laptop" />
-          <div class="article__text">
-            <h3>02</h3>
+
+          <div>
+            <span>02</span>
             <h4>Top 10 Laptops of 2022</h4>
             <p>Our best picks for various needs and budgets.</p>
           </div>
         </article>
-        <article class="article">
+
+        <article>
           <img
             src="./assets/images/image-gaming-growth.jpg"
             alt="Gaming growth"
           />
-          <div class="article__text">
-            <h3>03</h3>
+
+          <div>
+            <span>03</span>
             <h4>The Growth of Gaming</h4>
             <p>How the pandemic has sparked fresh opportunities.</p>
           </div>
@@ -139,5 +137,6 @@
         >. Coded by <a href="#">Pamela</a>.
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
